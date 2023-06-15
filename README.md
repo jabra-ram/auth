@@ -22,3 +22,12 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+* Commands - 
+rails new auth
+yarn add @babel/plugin-proposal-private-methods
+nvm use v14.21.3 
+bundle install  (for bcrypt)
+rails g resource user email password_digest
+rails g controller sessions new
+
