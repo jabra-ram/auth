@@ -1,0 +1,15 @@
+<p id="notice"> <%= notice %> </p>
+
+<h2> All Posts </h2>
+<div>
+<% @posts.each do |post|%>
+    <div>
+        <%= link_to post.title , post_path(post) %>
+        <% if current_user %>
+            <p> by - <%= post.user[:email] %> <p>
+        <% end %>
+<% end %>
+</div>
+<br>
+<%= link_to "Create post", new_post_path %>
+
